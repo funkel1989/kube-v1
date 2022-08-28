@@ -35,8 +35,8 @@ spec:
             sudoEnabled: true
           datasetProperties:
             "org.freenas:description": "flux-{{ parameters.[csi.storage.k8s.io/pvc/namespace] }}-{{ parameters.[csi.storage.k8s.io/pvc/name] }}"
-          datasetParentName: bigdata/kube/v
-          detachedSnapshotsDatasetParentName: bigdata/kube/s
+          datasetParentName: BIGDATA/kube/v
+          detachedSnapshotsDatasetParentName: BIGDATA/kube/s
           datasetEnableQuotas: true
           datasetEnableReservation: false
           datasetPermissionsMode: "0777"
