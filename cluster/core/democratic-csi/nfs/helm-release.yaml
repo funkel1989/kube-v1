@@ -195,7 +195,7 @@ spec:
 
     storageClasses:
       - name: csi-truenas-nfs
-        defaultClass: false
+        defaultClass: true
         reclaimPolicy: Delete # Delete, Retain
         volumeBindingMode: Immediate
         allowVolumeExpansion: true
