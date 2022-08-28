@@ -29,9 +29,7 @@ spec:
           protocol: http
           port: 80
           apiKey: "${SECRET_TRUENAS_APIKEY}"
-          username: root
           allowInsecure: true
-          apiVersion: 2
         zfs:
           cli:
             sudoEnabled: true
@@ -42,8 +40,8 @@ spec:
           datasetEnableQuotas: true
           datasetEnableReservation: false
           datasetPermissionsMode: "0777"
-          datasetPermissionsUser: root
-          datasetPermissionsGroup: wheel
+          datasetPermissionsUser: 1000
+          datasetPermissionsGroup: 1000
         nfs:
           shareCommentTemplate: "flux-{{ parameters.[csi.storage.k8s.io/pvc/namespace] }}-{{ parameters.[csi.storage.k8s.io/pvc/name] }}"
           shareHost: 192.168.0.9
@@ -51,7 +49,7 @@ spec:
           shareAllowedHosts: []
           shareAllowedNetworks: []
           shareMaprootUser: root
-          shareMaprootGroup: wheel
+          shareMaprootGroup: root
           shareMapallUser: ""
           shareMapallGroup: ""
 
