@@ -26,7 +26,7 @@ resources:
   - minecraft-server.yaml
   - minio.yaml
   - nextcloud.yaml
-  - node-freature-discovery.yaml
+  - node-feature-discovery.yaml
   - project-calico.yaml
   - prometheus-community.yaml
   - rancher.yaml
