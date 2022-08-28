@@ -22,7 +22,7 @@ spec:
 
     driver:
       config:
-        driver: freenas-nfs
+        driver: freenas-api-nfs
         instance_id: B8712266-C1B5-4DCD-9DFD-C6646C0AD3A4
         httpConnection:
           host: 192.168.0.9
