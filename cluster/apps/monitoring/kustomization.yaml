@@ -9,7 +9,7 @@ resources:
   # - goldilocks
   # - grafana
   # - intel-gpu-exporter
-  # - kube-prometheus-stack
+  - kube-prometheus-stack
   # - loki
   # - pushgateway
   # - smartctl-exporter
