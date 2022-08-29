@@ -18,6 +18,7 @@ spec:
   values:
     hostname: "rancher.${SECRET_DOMAIN}"
     replicas: 3
+    bootstrapPassword: "${BOOSTRAP_RANCHER_PASSWORD}"
     ingress:
       enabled: true
       tls:
