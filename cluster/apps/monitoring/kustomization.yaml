@@ -13,7 +13,7 @@ resources:
   # - smartctl-exporter
   # - snmp-exporter
   # - speedtest-exporter
-  # - thanos
+  - thanos
   # - uptimerobot-heartbeat
   # - vector
   # - vpa
